@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/s")
+@WebServlet("/s1")
 public class HelloContacts extends HttpServlet {
 
     @Override
@@ -23,6 +23,6 @@ public class HelloContacts extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
-        out.println("Hello Contacts");
+        out.println("Sorry I didn't mean that!!!!! Contacts");
     }
 }
