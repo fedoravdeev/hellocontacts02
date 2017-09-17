@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/s1")
+@WebServlet("/s2")
 public class HelloContacts extends HttpServlet {
 
     @Override
@@ -23,6 +23,13 @@ public class HelloContacts extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
-        out.println("Sorry I didn't mean that!!!!! Contacts");
+        out.println("Sorry I didn't mean that!!!!! Contacts Get");
+    }
+
+    @Override
+    protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //super.doPut(req, resp);
+        PrintWriter out = response.getWriter();
+        out.println("Sorry I didn't mean that!!!!! Contacts Put");
     }
 }
