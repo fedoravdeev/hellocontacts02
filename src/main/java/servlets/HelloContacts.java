@@ -44,7 +44,7 @@ public class HelloContacts extends HttpServlet {
         Connection conn = null;
         try {
             conn = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
-        } catch (SQLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         out.println("Connection");
